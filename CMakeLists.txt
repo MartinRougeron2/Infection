@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.10)
+project(Infection)
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(include)
+
+file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR} "src/*.cpp")
+ADD_EXECUTABLE(Infection ${SOURCES})
+
+target_link_libraries(Infection freetype)
+target_link_libraries(Infection udev)
+target_link_libraries(Infection ogg)
+target_link_libraries(Infection vorbis)
+target_link_libraries(Infection vorbisenc)
+target_link_libraries(Infection vorbisfile)
+target_link_libraries(Infection openal)
+target_link_libraries(Infection pthread)
+target_link_libraries(Infection pthread)
+target_link_libraries(Infection sfml-graphics)
+target_link_libraries(Infection sfml-window)
+target_link_libraries(Infection sfml-system)
