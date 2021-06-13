@@ -44,7 +44,7 @@ public class Health : MonoBehaviour
 
     public bool TakeDamage(float damage, GameObject damageSource)
     {
-        Health DS = damageSource.GetComponent<Health>;
+        Health DS = damageSource.GetComponent<Health>();
         if (DS)
             DS.isEagle = false;
         if (invincible || isEagle || !DS.isEagle)

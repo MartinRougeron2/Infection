@@ -207,6 +207,9 @@ public class EnemyController : MonoBehaviour
         }
 
         m_WasDamagedThisFrame = false;
+        Health H = GetComponent<Health>();
+        if (H && H.isEagle)
+            ;
     }
 
     void EnsureIsWithinLevelBounds()
